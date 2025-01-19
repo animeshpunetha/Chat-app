@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat App</title>
+  <link rel="icon" type="" href="./favicon.jpg">
+  <link id="theme-style" rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="profile">
+        <img src="profile.png" alt="Profile" class="profile-pic">
+        <h3>John Doe</h3>
+      </div>
+      <div class="chat-list">
+        <div class="chat-item active">
+          <div class="chat-avatar">
+            <img src="user1.png" alt="User 1">
+          </div>
+          <div class="chat-info">
+            <h4>Jane Smith</h4>
+            <p>Hey! How's it going?</p>
+          </div>
+          <span class="chat-time">2:15 PM</span>
+        </div>
+        <div class="chat-item">
+          <div class="chat-avatar">
+            <img src="group.png" alt="Group">
+          </div>
+          <div class="chat-info">
+            <h4>Project Team</h4>
+            <p>Let’s finalize the design.</p>
+          </div>
+          <span class="chat-time">1:30 PM</span>
+        </div>
+        <!-- Add more chat items here -->
+      </div>
+    </div>
+
+    <!-- Main Chat Window -->
+    <div class="chat-window">
+      <div class="chat-header">
+        <div class="chat-avatar">
+          <img src="user1.png" alt="Jane Smith">
+        </div>
+        <div class="chat-header-info">
+          <h2>Jane Smith</h2>
+          <p>Online</p>
+        </div>
+      </div>
+      <div class="chat-body">
+        <div class="message received">
+          <p>Hey! How are you?</p>
+          <span>2:14 PM</span>
+        </div>
+        <div class="message sent">
+          <p>I'm good, thanks! What about you?</p>
+          <span>2:15 PM</span>
+        </div>
+        <!-- Add more messages dynamically -->
+      </div>
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="sendButton" type="submit">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
