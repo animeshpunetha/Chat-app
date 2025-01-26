@@ -18,7 +18,8 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         if (response.status === 200) {
             // Save the token in localStorage or sessionStorage
             localStorage.setItem('token', data.token);
-
+            localStorage.setItem('userEmail', email);
+            localStorage.setItem('userId', data.userId); // Store the user ID
             // Redirect to the chat room or home page
             window.location.href = 'index.html'; // Adjust to your app's home page
         } else {
