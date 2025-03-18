@@ -22,41 +22,7 @@ A feature-rich real-time chat application built with **Node.js**, **Socket.IO**,
   - User-friendly interface with support for both desktop and mobile devices.
   - Dark theme for better usability.
 
----
 
-## Project Structure
-
-```plaintext
-chat-app/
-├── public/               # Contains frontend static files (HTML, CSS, JS)
-│   ├── index.html        # Main chatroom interface
-│   ├── login.html        # Login page
-│   ├── signup.html       # Signup page
-│   ├── styles.css        # Global styles for the application
-│   ├── script.js         # Frontend logic for the chatroom
-│   ├── login.js          # Frontend logic for login
-│   ├── signup.js         # Frontend logic for signup
-│   ├── assets/           # Static assets (images, audio, etc.)
-├── client/               # Handles client-side Socket.IO logic
-│   ├── client.js         # Socket.IO client logic
-├── server/               # Contains backend logic
-│   ├── config/           # Configuration files
-│   │   ├── db.js         # MongoDB connection logic
-│   ├── controllers/      # Application controllers
-│   │   ├── authController.js # Handles authentication logic
-│   ├── middlewares/      # Middleware for authentication
-│   ├── models/           # MongoDB schemas
-│   │   ├── Message.js    # Schema for messages
-│   │   ├── User.js       # Schema for users
-│   ├── routes/           # API routes
-│   │   ├── authRoutes.js # Routes for authentication
-│   │   ├── api.js        # Routes for message-related APIs
-│   ├── utils/            # Utility functions
-├── app.js                # Main server entry point
-├── package.json          # Dependencies and scripts
-├── package-lock.json     # Lock file for dependencies
-└── README.md             # Project documentation
-```
 
 
 ## Technologies Used
